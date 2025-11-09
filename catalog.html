@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Library - Book Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-brand">
+                <img src="Devi_Ahilya_Vishwavidyalaya_Logo.png" alt="University Library Logo" class="logo">
+                <h1 class="library-name">University Library</h1>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="catalog.html" class="nav-link active">Catalog</a></li>
+                    <li><a href="account.html" class="nav-link">My Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="catalog-container">
+            <div class="catalog-sidebar">
+                <h2 class="filter-title">Filter by Genre</h2>
+                <div class="filter-buttons">
+                    <a href="catalog.html" class="filter-button">All Books</a>
+                    <a href="catalog-fiction.html" class="filter-button">Fiction</a>
+                    <a href="catalog-nonfiction.html" class="filter-button">Non-Fiction</a>
+                </div>
+            </div>
+
+            <div class="catalog-main">
+                <h2 class="page-title">Book Catalog</h2>
+                
+                <section class="featured-section">
+                    <div class="featured-book">
+                        <img src="https://placehold.co/300x400/0062D3/FFFFFF?text=The+Great+Gatsby" alt="The Great Gatsby" class="featured-cover">
+                        <div class="featured-content">
+                            <h3 class="featured-title">The Great Gatsby</h3>
+                            <p class="featured-author">F. Scott Fitzgerald</p>
+                            <p class="featured-description">A classic American novel set in the Jazz Age, following Nick Carraway's observations of his mysterious neighbor Jay Gatsby and his obsession with Daisy Buchanan. This timeless tale explores themes of wealth, love, and the American Dream.</p>
+                            <a href="book-great-gatsby.html" class="view-details-link">View Details</a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="books-grid">
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=To+Kill+a+Mockingbird" alt="To Kill a Mockingbird" class="book-cover-img">
+                        <h3 class="book-title">To Kill a Mockingbird</h3>
+                        <p class="book-author">Harper Lee</p>
+                        <a href="book-to-kill-mockingbird.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=1984" alt="1984" class="book-cover-img">
+                        <h3 class="book-title">1984</h3>
+                        <p class="book-author">George Orwell</p>
+                        <a href="book-1984.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Pride+and+Prejudice" alt="Pride and Prejudice" class="book-cover-img">
+                        <h3 class="book-title">Pride and Prejudice</h3>
+                        <p class="book-author">Jane Austen</p>
+                        <a href="book-pride-prejudice.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=The+Catcher+in+the+Rye" alt="The Catcher in the Rye" class="book-cover-img">
+                        <h3 class="book-title">The Catcher in the Rye</h3>
+                        <p class="book-author">J.D. Salinger</p>
+                        <a href="book-catcher-rye.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Lord+of+the+Flies" alt="Lord of the Flies" class="book-cover-img">
+                        <h3 class="book-title">Lord of the Flies</h3>
+                        <p class="book-author">William Golding</p>
+                        <a href="book-lord-flies.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Brave+New+World" alt="Brave New World" class="book-cover-img">
+                        <h3 class="book-title">Brave New World</h3>
+                        <p class="book-author">Aldous Huxley</p>
+                        <a href="book-brave-new-world.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=The+Hobbit" alt="The Hobbit" class="book-cover-img">
+                        <h3 class="book-title">The Hobbit</h3>
+                        <p class="book-author">J.R.R. Tolkien</p>
+                        <a href="book-hobbit.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Animal+Farm" alt="Animal Farm" class="book-cover-img">
+                        <h3 class="book-title">Animal Farm</h3>
+                        <p class="book-author">George Orwell</p>
+                        <a href="book-animal-farm.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=The+Lord+of+the+Rings" alt="The Lord of the Rings" class="book-cover-img">
+                        <h3 class="book-title">The Lord of the Rings</h3>
+                        <p class="book-author">J.R.R. Tolkien</p>
+                        <a href="book-lord-rings.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Jane+Eyre" alt="Jane Eyre" class="book-cover-img">
+                        <h3 class="book-title">Jane Eyre</h3>
+                        <p class="book-author">Charlotte Brontë</p>
+                        <a href="book-jane-eyre.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Wuthering+Heights" alt="Wuthering Heights" class="book-cover-img">
+                        <h3 class="book-title">Wuthering Heights</h3>
+                        <p class="book-author">Emily Brontë</p>
+                        <a href="book-wuthering-heights.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=The+Odyssey" alt="The Odyssey" class="book-cover-img">
+                        <h3 class="book-title">The Odyssey</h3>
+                        <p class="book-author">Homer</p>
+                        <a href="book-odyssey.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Introduction+to+Algorithms" alt="Introduction to Algorithms" class="book-cover-img">
+                        <h3 class="book-title">Introduction to Algorithms</h3>
+                        <p class="book-author">Thomas H. Cormen, et al.</p>
+                        <a href="book-intro-algorithms.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Clean+Code" alt="Clean Code" class="book-cover-img">
+                        <h3 class="book-title">Clean Code</h3>
+                        <p class="book-author">Robert C. Martin</p>
+                        <a href="book-clean-code.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=The+Lean+Startup" alt="The Lean Startup" class="book-cover-img">
+                        <h3 class="book-title">The Lean Startup</h3>
+                        <p class="book-author">Eric Ries</p>
+                        <a href="book-lean-startup.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Database+Systems" alt="Database Systems" class="book-cover-img">
+                        <h3 class="book-title">Database Systems</h3>
+                        <p class="book-author">Carlos Coronel, Steven Morris</p>
+                        <a href="book-database-systems.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Business+Analysis" alt="Business Analysis" class="book-cover-img">
+                        <h3 class="book-title">Business Analysis</h3>
+                        <p class="book-author">Steven P. Blais</p>
+                        <a href="book-business-analysis.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Software+Engineering" alt="Software Engineering" class="book-cover-img">
+                        <h3 class="book-title">Software Engineering</h3>
+                        <p class="book-author">Roger S. Pressman, Bruce Maxim</p>
+                        <a href="book-software-engineering.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Network+Security" alt="Network Security" class="book-cover-img">
+                        <h3 class="book-title">Network Security</h3>
+                        <p class="book-author">William Stallings</p>
+                        <a href="book-network-security.html" class="view-details-button">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 University Library. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

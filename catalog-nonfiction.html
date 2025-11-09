@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Library - Non-Fiction Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-brand">
+                <img src="Devi_Ahilya_Vishwavidyalaya_Logo.png" alt="University Library Logo" class="logo">
+                <h1 class="library-name">University Library</h1>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="catalog.html" class="nav-link active">Catalog</a></li>
+                    <li><a href="account.html" class="nav-link">My Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="catalog-container">
+            <div class="catalog-sidebar">
+                <h2 class="filter-title">Filter by Genre</h2>
+                <div class="filter-buttons">
+                    <a href="catalog.html" class="filter-button">All Books</a>
+                    <a href="catalog-fiction.html" class="filter-button">Fiction</a>
+                    <a href="catalog-nonfiction.html" class="filter-button active">Non-Fiction</a>
+                </div>
+            </div>
+
+            <div class="catalog-main">
+                <h2 class="page-title">Catalog: Non-Fiction</h2>
+                
+                <section class="featured-section">
+                    <div class="featured-book">
+                        <img src="https://placehold.co/300x400/0062D3/FFFFFF?text=Introduction+to+Algorithms" alt="Introduction to Algorithms" class="featured-cover">
+                        <div class="featured-content">
+                            <h3 class="featured-title">Introduction to Algorithms</h3>
+                            <p class="featured-author">Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein</p>
+                            <p class="featured-description">A comprehensive textbook on algorithms and data structures, covering a broad range of algorithms in depth. Essential reading for computer science students and professionals. This book provides a thorough introduction to the mathematical analysis of algorithms and their design.</p>
+                            <a href="book-intro-algorithms.html" class="view-details-link">View Details</a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="books-grid">
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Clean+Code" alt="Clean Code" class="book-cover-img">
+                        <h3 class="book-title">Clean Code</h3>
+                        <p class="book-author">Robert C. Martin</p>
+                        <a href="book-clean-code.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=The+Lean+Startup" alt="The Lean Startup" class="book-cover-img">
+                        <h3 class="book-title">The Lean Startup</h3>
+                        <p class="book-author">Eric Ries</p>
+                        <a href="book-lean-startup.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Database+Systems" alt="Database Systems" class="book-cover-img">
+                        <h3 class="book-title">Database Systems</h3>
+                        <p class="book-author">Carlos Coronel, Steven Morris</p>
+                        <a href="book-database-systems.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Business+Analysis" alt="Business Analysis" class="book-cover-img">
+                        <h3 class="book-title">Business Analysis</h3>
+                        <p class="book-author">Steven P. Blais</p>
+                        <a href="book-business-analysis.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Software+Engineering" alt="Software Engineering" class="book-cover-img">
+                        <h3 class="book-title">Software Engineering</h3>
+                        <p class="book-author">Roger S. Pressman, Bruce Maxim</p>
+                        <a href="book-software-engineering.html" class="view-details-button">View Details</a>
+                    </div>
+                    <div class="book-card">
+                        <img src="https://placehold.co/300x400/F4F4F4/222222?text=Network+Security" alt="Network Security" class="book-cover-img">
+                        <h3 class="book-title">Network Security</h3>
+                        <p class="book-author">William Stallings</p>
+                        <a href="book-network-security.html" class="view-details-button">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 University Library. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

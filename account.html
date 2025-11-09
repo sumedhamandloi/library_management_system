@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Library - My Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-brand">
+                <img src="Devi_Ahilya_Vishwavidyalaya_Logo.png" alt="University Library Logo" class="logo">
+                <h1 class="library-name">University Library</h1>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="catalog.html" class="nav-link">Catalog</a></li>
+                    <li><a href="account.html" class="nav-link active">My Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="account-container">
+            <div class="login-form-container">
+                <h2 class="form-title">Student Login</h2>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="University-id" class="form-label">University ID</label>
+                        <input type="text" id="University-id" name="University-id" class="form-input" placeholder="Enter your University ID">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Enter your University email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" name="password" class="form-input" placeholder="Enter your password">
+                    </div>
+                    <div class="form-group">
+                        <label for="department" class="form-label">Department</label>
+                        <select id="department" name="department" class="form-input">
+                            <option value="">Select your department</option>
+                            <option value="cs">Computer Science</option>
+                            <option value="it">Information Technology</option>
+                            <option value="business">Business Administration</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="year" class="form-label">Academic Year</label>
+                        <select id="year" name="year" class="form-input">
+                            <option value="">Select academic year</option>
+                            <option value="freshman">Freshman</option>
+                            <option value="sophomore">Sophomore</option>
+                            <option value="junior">Junior</option>
+                            <option value="senior">Senior</option>
+                            <option value="graduate">Graduate</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+                <p class="register-link">
+                    New student? <a href="#">Register your library account here.</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 University Library. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
