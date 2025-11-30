@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>University Library</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="app-header">
+		<div class="container header-inner">
+			<h1 class="brand"><img src="Devi_Ahilya_Vishwavidyalaya_Logo.png" alt="University Logo" class="logo">University Library</h1>
+			<nav class="tabs" role="tablist" aria-label="Main sections">
+				<button class="tab active" data-tab="books" aria-selected="true">Books</button>
+				<button class="tab" data-tab="borrowers" aria-selected="false">Borrowers</button>
+				<button class="tab" data-tab="loans" aria-selected="false">Issue & Logs</button>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="panel" id="panel-books">
+			<div class="panel-header">
+				<h2>Books</h2>
+				<div class="actions">
+					<input id="book-search" class="input" placeholder="Search by title, author, or category" aria-label="Search books">
+					<button id="btn-add-book" class="btn primary">Add Book</button>
+				</div>
+			</div>
+			<div class="table-wrap">
+				<table class="table" id="books-table">
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Author</th>
+							<th>Category</th>
+							<th>ISBN</th>
+							<th>Status</th>
+							<th class="col-actions">Actions</th>
+						</tr>
+					</thead>
+					<tbody id="books-tbody">
+						<tr class="empty">
+							<td colspan="6">No books yet. Click “Add Book”.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="panel hidden" id="panel-borrowers">
+			<div class="panel-header">
+				<h2>Borrowers</h2>
+				<div class="actions">
+					<input id="borrower-search" class="input" placeholder="Search by name or email" aria-label="Search borrowers">
+					<button id="btn-add-borrower" class="btn primary">Add Borrower</button>
+				</div>
+			</div>
+			<div class="table-wrap">
+				<table class="table" id="borrowers-table">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Student ID</th>
+							<th>Active Loans</th>
+							<th class="col-actions">Actions</th>
+						</tr>
+					</thead>
+					<tbody id="borrowers-tbody">
+						<tr class="empty">
+							<td colspan="5">No borrowers yet. Click “Add Borrower”.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="panel hidden" id="panel-loans">
+			<div class="panel-header">
+				<h2>Issue & Return</h2>
+				<div class="actions">
+					<button id="btn-issue" class="btn primary">Issue Book</button>
+				</div>
+			</div>
+
+			<h3 class="subheading">Active Loans</h3>
+			<div class="table-wrap">
+				<table class="table" id="active-loans-table">
+					<thead>
+						<tr>
+							<th>Book</th>
+							<th>Borrower</th>
+							<th>Issued On</th>
+							<th>Due On</th>
+							<th class="col-actions">Actions</th>
+						</tr>
+					</thead>
+					<tbody id="active-loans-tbody">
+						<tr class="empty">
+							<td colspan="5">No active loans.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="subheading">Issue & Return Logs</h3>
+			<div class="table-wrap">
+				<table class="table" id="logs-table">
+					<thead>
+						<tr>
+							<th>Book</th>
+							<th>Borrower</th>
+							<th>Action</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+					<tbody id="logs-tbody">
+						<tr class="empty">
+							<td colspan="4">No logs yet.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</main>
+
+	<!-- Modal Root -->
+	<div id="modal-root" class="modal-backdrop hidden" aria-hidden="true"></div>
+
+	<!-- Toasts -->
+	<div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+	<script src="app.js"></script>
+</body>
+</html>
+
+
